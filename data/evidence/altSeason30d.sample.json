@@ -1,0 +1,165 @@
+{
+  "data": {
+    "timeframe": "30d",
+    "points": [
+      {
+        "timestamp": "2026-10-21T00:00:00Z",
+        "altcoin_index": 59,
+        "altcoin_marketcap": 1106827070103.31
+      },
+      {
+        "timestamp": "2026-10-22T00:00:00Z",
+        "altcoin_index": 56,
+        "altcoin_marketcap": 1116651440926.95
+      },
+      {
+        "timestamp": "2026-10-23T00:00:00Z",
+        "altcoin_index": 51,
+        "altcoin_marketcap": 1085890853023.09
+      },
+      {
+        "timestamp": "2026-10-24T00:00:00Z",
+        "altcoin_index": 48,
+        "altcoin_marketcap": 1082406090122.32
+      },
+      {
+        "timestamp": "2026-10-25T00:00:00Z",
+        "altcoin_index": 52,
+        "altcoin_marketcap": 1077715260546.45
+      },
+      {
+        "timestamp": "2026-10-26T00:00:00Z",
+        "altcoin_index": 53,
+        "altcoin_marketcap": 1071010833977.14
+      },
+      {
+        "timestamp": "2026-10-27T00:00:00Z",
+        "altcoin_index": 54,
+        "altcoin_marketcap": 1071001404675.22
+      },
+      {
+        "timestamp": "2026-10-28T00:00:00Z",
+        "altcoin_index": 59,
+        "altcoin_marketcap": 1080869823432.74
+      },
+      {
+        "timestamp": "2026-10-29T00:00:00Z",
+        "altcoin_index": 42,
+        "altcoin_marketcap": 1084541904853.73
+      },
+      {
+        "timestamp": "2026-10-30T00:00:00Z",
+        "altcoin_index": 53,
+        "altcoin_marketcap": 1042368192238
+      },
+      {
+        "timestamp": "2026-10-31T00:00:00Z",
+        "altcoin_index": 49,
+        "altcoin_marketcap": 1047701268812.24
+      },
+      {
+        "timestamp": "2026-11-01T00:00:00Z",
+        "altcoin_index": 47,
+        "altcoin_marketcap": 1044854438052.57
+      },
+      {
+        "timestamp": "2026-11-02T00:00:00Z",
+        "altcoin_index": 48,
+        "altcoin_marketcap": 1047901826600.96
+      },
+      {
+        "timestamp": "2026-11-03T00:00:00Z",
+        "altcoin_index": 47,
+        "altcoin_marketcap": 1032450722990.84
+      },
+      {
+        "timestamp": "2026-11-04T00:00:00Z",
+        "altcoin_index": 48,
+        "altcoin_marketcap": 1040226578968.81
+      },
+      {
+        "timestamp": "2026-11-05T00:00:00Z",
+        "altcoin_index": 45,
+        "altcoin_marketcap": 1070513345157.58
+      },
+      {
+        "timestamp": "2026-11-06T00:00:00Z",
+        "altcoin_index": 44,
+        "altcoin_marketcap": 1018479209349.28
+      },
+      {
+        "timestamp": "2026-11-07T00:00:00Z",
+        "altcoin_index": 38,
+        "altcoin_marketcap": 1020681400272.65
+      },
+      {
+        "timestamp": "2026-11-08T00:00:00Z",
+        "altcoin_index": 37,
+        "altcoin_marketcap": 1017272568728.24
+      },
+      {
+        "timestamp": "2026-11-09T00:00:00Z",
+        "altcoin_index": 38,
+        "altcoin_marketcap": 988700818518.24
+      },
+      {
+        "timestamp": "2026-11-10T00:00:00Z",
+        "altcoin_index": 42,
+        "altcoin_marketcap": 991993662501.81
+      },
+      {
+        "timestamp": "2026-11-11T00:00:00Z",
+        "altcoin_index": 39,
+        "altcoin_marketcap": 968874231552.88
+      },
+      {
+        "timestamp": "2026-11-12T00:00:00Z",
+        "altcoin_index": 44,
+        "altcoin_marketcap": 966386130573.56
+      },
+      {
+        "timestamp": "2026-11-13T00:00:00Z",
+        "altcoin_index": 47,
+        "altcoin_marketcap": 953672831085.26
+      },
+      {
+        "timestamp": "2026-11-14T00:00:00Z",
+        "altcoin_index": 41,
+        "altcoin_marketcap": 929805732113.33
+      },
+      {
+        "timestamp": "2026-11-15T00:00:00Z",
+        "altcoin_index": 46,
+        "altcoin_marketcap": 874264526724.49
+      },
+      {
+        "timestamp": "2026-11-16T00:00:00Z",
+        "altcoin_index": 44,
+        "altcoin_marketcap": 897278497668.91
+      },
+      {
+        "timestamp": "2026-11-17T00:00:00Z",
+        "altcoin_index": 53,
+        "altcoin_marketcap": 890501209601.05
+      },
+      {
+        "timestamp": "2026-11-18T00:00:00Z",
+        "altcoin_index": 55,
+        "altcoin_marketcap": 899542245844.92
+      },
+      {
+        "timestamp": "2026-11-19T00:00:00Z",
+        "altcoin_index": 59,
+        "altcoin_marketcap": 884890272801.43
+      }
+    ]
+  },
+  "status": {
+    "timestamp": "2026-11-19T05:59:16.050Z",
+    "error_code": 0,
+    "error_message": null,
+    "elapsed": 4,
+    "credit_count": 1,
+    "notice": null
+  }
+}

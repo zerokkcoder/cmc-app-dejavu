@@ -1,0 +1,50 @@
+{
+  "data": {
+    "timeframe": "7d",
+    "points": [
+      {
+        "timestamp": "2026-11-13T00:00:00Z",
+        "altcoin_index": 47,
+        "altcoin_marketcap": 953672831085.26
+      },
+      {
+        "timestamp": "2026-11-14T00:00:00Z",
+        "altcoin_index": 41,
+        "altcoin_marketcap": 929805732113.33
+      },
+      {
+        "timestamp": "2026-11-15T00:00:00Z",
+        "altcoin_index": 46,
+        "altcoin_marketcap": 874264526724.49
+      },
+      {
+        "timestamp": "2026-11-16T00:00:00Z",
+        "altcoin_index": 44,
+        "altcoin_marketcap": 897278497668.91
+      },
+      {
+        "timestamp": "2026-11-17T00:00:00Z",
+        "altcoin_index": 53,
+        "altcoin_marketcap": 890501209601.05
+      },
+      {
+        "timestamp": "2026-11-18T00:00:00Z",
+        "altcoin_index": 55,
+        "altcoin_marketcap": 899542245844.92
+      },
+      {
+        "timestamp": "2026-11-19T00:00:00Z",
+        "altcoin_index": 59,
+        "altcoin_marketcap": 884890272801.43
+      }
+    ]
+  },
+  "status": {
+    "timestamp": "2026-11-19T05:59:16.060Z",
+    "error_code": 0,
+    "error_message": null,
+    "elapsed": 5,
+    "credit_count": 1,
+    "notice": null
+  }
+}

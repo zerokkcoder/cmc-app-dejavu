@@ -1,69 +1,103 @@
-import Image from "next/image";
+"use client";
+
+import { useMemo, useState } from "react";
+import ObservatoryHeader from "@/components/ObservatoryHeader";
+import HeroInsight from "@/components/HeroInsight";
+import ApiPulseStrip from "@/components/ApiPulseStrip";
+import ConstellationMap from "@/components/ConstellationMap";
+import FingerprintRadar from "@/components/FingerprintRadar";
+import TimeSlider from "@/components/TimeSlider";
+import NeighborCards from "@/components/NeighborCards";
+import ForwardPaths from "@/components/ForwardPaths";
+import DisclaimerBanner from "@/components/DisclaimerBanner";
+import DemoBanner from "@/components/DemoBanner";
+import { insightText, isPlaceholder, snapshot } from "@/lib/data/loadSnapshot";
+import type { Lang } from "@/lib/i18n";
 
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+  const [lang, setLang] = useState<Lang>("zh");
+  const [index, setIndex] = useState(snapshot.currentIndex);
+
+  const minIndex = useMemo(() => snapshot.valid.findIndex(Boolean), []);
+  const maxIndex = useMemo(() => {
+    for (let i = snapshot.valid.length - 1; i >= 0; i -= 1) if (snapshot.valid[i]) return i;
+    return 0;
+  }, []);
+  const safeIndex = Math.min(Math.max(index, minIndex < 0 ? 0 : minIndex), maxIndex);
+  const neighbours = snapshot.neighbours[String(safeIndex)] ?? [];
+
+  if (isPlaceholder() || snapshot.days.length === 0) {
+    return (
+      <main className="min-h-screen px-4">
+        <ObservatoryHeader lang={lang} onLang={setLang} coverageEnd="—" credits={0} />
+        <div className="mx-auto max-w-2xl px-6 py-24 text-center">
+          <h1 className="text-2xl tracking-[0.2em] text-[var(--amber)] mono">DÉJÀVU</h1>
+          <p className="mt-6 text-sm leading-relaxed text-[var(--muted)]">
+            {lang === "zh"
+              ? "尚未生成数据快照。请先配置 CMC_API_KEY，然后运行 npm run snapshot。"
+              : "No data snapshot yet. Configure CMC_API_KEY, then run npm run snapshot."}
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        <DisclaimerBanner lang={lang} />
       </main>
-    </div>
+    );
+  }
+
+  return (
+    <main className="mx-auto flex min-h-screen max-w-[1920px] flex-col px-3 pb-2 lg:px-5 xl:h-screen xl:overflow-hidden xl:py-2 2xl:py-3">
+      {snapshot.meta.generatedAt === "synthetic-demo" && <DemoBanner lang={lang} />}
+      <ObservatoryHeader
+        lang={lang}
+        onLang={setLang}
+        coverageEnd={snapshot.meta.coverageEnd}
+        credits={snapshot.meta.totalCredits}
+      />
+      <HeroInsight lang={lang} day={snapshot.days[safeIndex]} insight={insightText(lang)} />
+
+      <section className="grid min-h-0 flex-1 gap-3 py-3 xl:grid-cols-12">
+        <div className="flex min-h-0 flex-col gap-3 xl:col-span-5">
+          <div className="min-h-[380px] flex-1 xl:min-h-0">
+            <ConstellationMap
+              snapshot={snapshot}
+              index={safeIndex}
+              neighbours={neighbours}
+              onSelect={setIndex}
+              lang={lang}
+            />
+          </div>
+          <TimeSlider
+            min={minIndex}
+            max={maxIndex}
+            value={safeIndex}
+            onChange={setIndex}
+            lang={lang}
+            day={snapshot.days[safeIndex]}
+          />
+        </div>
+
+        <div className="flex min-h-0 flex-col gap-3 xl:col-span-3">
+          <div className="min-h-[300px] flex-1 xl:min-h-0">
+            <FingerprintRadar
+              snapshot={snapshot}
+              index={safeIndex}
+              neighbourIndex={neighbours[0]?.index}
+              lang={lang}
+            />
+          </div>
+          <ApiPulseStrip snapshot={snapshot} />
+        </div>
+
+        <div className="flex min-h-0 flex-col gap-3 xl:col-span-4">
+          <div className="min-h-[320px] flex-[1.15] xl:min-h-0">
+            <NeighborCards snapshot={snapshot} neighbours={neighbours} lang={lang} onSelect={setIndex} />
+          </div>
+          <div className="min-h-[220px] flex-1 xl:min-h-0">
+            <ForwardPaths snapshot={snapshot} index={safeIndex} neighbours={neighbours} lang={lang} />
+          </div>
+        </div>
+      </section>
+
+      <DisclaimerBanner lang={lang} />
+    </main>
   );
 }

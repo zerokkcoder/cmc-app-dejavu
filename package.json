@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "probe": "tsx scripts/probe-depth.ts",
+    "snapshot": "tsx scripts/build-snapshot.ts",
+    "snapshot:demo": "tsx scripts/build-demo-snapshot.ts",
+    "test": "node --import tsx --test tests/*.test.ts"
   },
   "dependencies": {
     "next": "16.4.6",
@@ -20,6 +24,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
+    "dotenv": "^16.6.1",
+    "tsx": "^4.20.6",
     "tailwindcss": "4.3.3",
     "typescript": "^5"
   }

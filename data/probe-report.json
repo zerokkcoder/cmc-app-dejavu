@@ -1,0 +1,75 @@
+{
+  "probedAt": "2026-11-19T05:52:26.607Z",
+  "keyPlan": {
+    "plan": {
+      "credit_limit_monthly": 450000,
+      "credit_limit_monthly_reset": "In 11 days, 18 hours, 7 minutes",
+      "credit_limit_monthly_reset_timestamp": "2026-12-01T00:00:00.000Z",
+      "rate_limit_minute": 600
+    },
+    "usage": {
+      "current_minute": {
+        "requests_made": 1,
+        "requests_left": 599
+      },
+      "current_day": {
+        "credits_used": 0
+      },
+      "current_month": {
+        "credits_used": 0,
+        "credits_left": 450000
+      }
+    }
+  },
+  "creditsUsed": 114,
+  "globalHistorical": {
+    "rows": 4951,
+    "firstDay": "2013-04-29",
+    "lastDay": "2026-11-19",
+    "firstRowFields": [
+      "timestamp",
+      "quote"
+    ],
+    "usdFields": [
+      "timestamp",
+      "total_market_cap",
+      "altcoin_market_cap"
+    ],
+    "credits": 50
+  },
+  "fearGreedHistorical": {
+    "pages": [
+      {
+        "first": "2026-11-18",
+        "last": "2025-07-07",
+        "rows": 500
+      },
+      {
+        "first": "2025-07-06",
+        "last": "2024-02-23",
+        "rows": 500
+      },
+      {
+        "first": "2024-02-22",
+        "last": "2023-06-29",
+        "rows": 239
+      }
+    ],
+    "totalRows": 1239,
+    "firstDay": "2024-02-22",
+    "lastDay": "2025-07-07"
+  },
+  "altSeasonHistorical": {
+    "shape": [
+      "timeframe",
+      "points"
+    ],
+    "credits": 1
+  },
+  "btcQuotesHistorical": {
+    "rows": 5932,
+    "firstDay": "2010-07-14",
+    "lastDay": "2026-11-19",
+    "credits": 60
+  }
+}

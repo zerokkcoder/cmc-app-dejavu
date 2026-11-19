@@ -1,0 +1,33 @@
+name: Refresh CMC snapshot
+
+on:
+  schedule:
+    # Mondays 03:17 UTC
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build real snapshot
+        env:
+          CMC_API_KEY: ${{ secrets.CMC_API_KEY }}
+        run: npm run snapshot
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/snapshot.json data/manifest.json data/evidence
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "chore: refresh CMC snapshot [skip ci]"
+          git push
