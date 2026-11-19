@@ -37,6 +37,8 @@ npm run build
 
 The runtime never calls CMC, so no `CMC_API_KEY` is required on Vercel. Keep the key local/CI-only.
 
+**Live demo (already deployed):** https://cmc-app-dejavu.vercel.app/
+
 ## Recording script (3–5 minutes)
 
 1. Show the constellation and say what each point means.
@@ -48,7 +50,7 @@ The runtime never calls CMC, so no `CMC_API_KEY` is required on Vercel. Keep the
 
 ## X post template
 
-> Built **DÉJÀVU** for #BuildwithCMC — a market déjà-vu engine: 6-dim fingerprint from CMC first-party indices, find the most similar day in 1000 days, see what happened next. Live: <URL> · Demo: <video> · Submission: <DoraHacks URL> #BuildwithCMC
+> Built **DÉJÀVU** for #BuildwithCMC — a market déjà-vu engine: 6-dim fingerprint from CMC first-party indices, find the most similar day in 1000 days, see what happened next. Live: https://cmc-app-dejavu.vercel.app/ · Demo: <video> · Submission: <DoraHacks URL> #BuildwithCMC
 
 ## Compliance
 

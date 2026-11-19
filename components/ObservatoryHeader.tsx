@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { COPY, type Lang } from "@/lib/i18n";
 
 export default function ObservatoryHeader({
@@ -15,10 +16,21 @@ export default function ObservatoryHeader({
 }) {
   return (
     <header className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 border-b border-[var(--border)] px-1 py-2 xl:py-1.5">
-      <div className="flex items-baseline gap-3">
-        <span className="text-xl font-semibold tracking-[0.2em] text-[var(--amber)] mono xl:text-lg">DÉJÀVU</span>
-        <span className="text-xs text-[var(--muted)] xl:hidden sm:text-sm">{COPY.tagline[lang]}</span>
-        <span className="hidden text-xs text-[var(--muted)] 2xl:inline">{COPY.tagline[lang]}</span>
+      <div className="flex items-center gap-3">
+        <Image
+          src="/logo.svg"
+          alt=""
+          width={30}
+          height={30}
+          priority
+          unoptimized
+          className="shrink-0"
+        />
+        <div className="flex items-baseline gap-3">
+          <span className="text-xl font-semibold tracking-[0.2em] text-[var(--amber)] mono xl:text-lg">DÉJÀVU</span>
+          <span className="text-xs text-[var(--muted)] xl:hidden sm:text-sm">{COPY.tagline[lang]}</span>
+          <span className="hidden text-xs text-[var(--muted)] 2xl:inline">{COPY.tagline[lang]}</span>
+        </div>
       </div>
       <div className="flex items-center gap-3 text-xs xl:gap-4">
         <div className="hidden sm:block text-right">
@@ -40,7 +52,7 @@ export default function ObservatoryHeader({
           {lang === "zh" ? "EN" : "中文"}
         </button>
         <a
-          href="https://github.com/zerokkcoder"
+          href="https://github.com/zerokkcoder/cmc-app-dejavu"
           target="_blank"
           rel="noreferrer"
           className="text-[var(--muted)] hover:text-[var(--text)]"

@@ -37,6 +37,8 @@ npm run build
 
 运行时不调用 CMC，Vercel 上不需要 `CMC_API_KEY`。key 只留在本地或 CI secret。
 
+**线上 demo（已部署）：** https://cmc-app-dejavu.vercel.app/
+
 ## 录屏脚本（3–5 分钟）
 
 1. 展示星图，说明每个点是一天。
@@ -48,7 +50,7 @@ npm run build
 
 ## X 帖模板
 
-> Built **DÉJÀVU** for #BuildwithCMC — a market déjà-vu engine: 6-dim fingerprint from CMC first-party indices, find the most similar day in 1000 days, see what happened next. Live: <链接> · Demo: <视频> · Submission: <DoraHacks 链接> #BuildwithCMC
+> Built **DÉJÀVU** for #BuildwithCMC — a market déjà-vu engine: 6-dim fingerprint from CMC first-party indices, find the most similar day in 1000 days, see what happened next. Live: https://cmc-app-dejavu.vercel.app/ · Demo: <视频> · Submission: <DoraHacks 链接> #BuildwithCMC
 
 ## 合规
 

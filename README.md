@@ -6,6 +6,8 @@ A one-screen market déjà-vu engine built entirely on CoinMarketCap Pro API dat
 
 Built for **Build with CMC: API Hackathon Round 2 (Plushie)** — **Data and Visualisation** track. `#BuildwithCMC`
 
+**Live demo:** https://cmc-app-dejavu.vercel.app/ · **Repository:** https://github.com/zerokkcoder/cmc-app-dejavu
+
 > ✅ **DATA STATUS:** `data/snapshot.json` contains **real CMC API data** fetched with a Startup-tier key: 1,089 aligned UTC days (2023-11-26 → 2026-11-18), 347 credits consumed. Real raw responses with `status.credit_count` are in `data/evidence/*.sample.json`. `data/probe-report.json` records the verified field/plan probe. Refresh with `npm run probe && npm run snapshot`.
 
 ## Why it is different
@@ -43,7 +45,7 @@ npm run dev            # http://localhost:3000
 | `/v3/index/cmc100-latest` | supplementary current index read |
 | `/v3/cryptocurrency/listings/latest` | resolve current top-30 coin IDs |
 
-Credit cost of one full snapshot build: **~369 credits**, vs. the event's 450,000/month Startup allowance (~0.1% per build). `status.credit_count` is recorded in `data/manifest.json`.
+Credit cost of one full snapshot build: **347 credits (measured)**, vs. the event's 450,000/month Startup allowance (~0.08% per build). `status.credit_count` is recorded in `data/manifest.json`.
 
 ## What the API made possible / where it got in the way
 
