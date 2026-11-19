@@ -35,7 +35,17 @@
 | global latest / CMC100 / key info / listings | ~3 |
 | **Total** | **347 (measured)** |
 
-With the event's Startup tier at 450,000 credits/month, weekly refresh plus local rebuilds stay near ~1% of the allowance. `status.credit_count` is recorded per call in `data/manifest.json`.
+With the event's Startup tier at 450,000 credits/month, a daily refresh (347 × 30 ≈ 10,410 credits/month) stays near ~2.3% of the allowance. `status.credit_count` is recorded per call in `data/manifest.json`.
+
+## Daily automation
+
+`.github/workflows/refresh.yml` runs at 03:17 UTC every day (`17 3 * * *`) and can also be started manually via `workflow_dispatch`. Requirements:
+
+- The workflow runs only on the repository's default branch (`main`).
+- A repository secret named `CMC_API_KEY` must exist under Settings → Secrets and variables → Actions. Without it the build fails before any data is written.
+- GitHub schedules are best-effort: runs may be delayed or skipped under platform load, and scheduled workflows on public repositories are suspended after 60 days of repository inactivity.
+- The workflow commits `data/` back with the built-in `GITHUB_TOKEN`; branch protection on `main` would block that push.
+- After the hackathon the Startup tier may expire. If the key is downgraded, keep the daily volume in mind or reduce the schedule.
 
 ## Verified by `npm run probe` (2026-11-19)
 

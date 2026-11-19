@@ -35,7 +35,17 @@
 | 全球最新 / CMC100 / key info / listings | ~3 |
 | **合计** | **347（实测）** |
 
-活动 Startup 额度 450,000/月，每周刷新加本地重建约占 1%。每次调用的 `status.credit_count` 记入 `data/manifest.json`。
+活动 Startup 额度 450,000/月，每日刷新约 347 × 30 ≈ 10,410 credits，占额度约 2.3%。每次调用的 `status.credit_count` 记入 `data/manifest.json`。
+
+## 每日自动刷新
+
+`.github/workflows/refresh.yml` 每天 03:17 UTC 执行一次（`17 3 * * *`），也可在 Actions 页面手动触发（`workflow_dispatch`）。前置条件与限制：
+
+- 定时工作流只在仓库默认分支（`main`）上运行。
+- 必须在 Settings → Secrets and variables → Actions 中配置名为 `CMC_API_KEY` 的 secret；缺失时构建会在写数据前失败。
+- GitHub 定时任务不保证准点，平台负载高时可能延迟或跳过；公开仓库若 60 天无活动，定时任务会被自动暂停。
+- 工作流用内置 `GITHUB_TOKEN` 将 `data/` 提交回仓库；若 `main` 开启分支保护，该推送会被拒绝。
+- 黑客松结束后 Startup 套餐可能失效；key 降级后需重新评估每日调用量或调低频率。
 
 ## `npm run probe` 实测结果（2026-11-19）
 

@@ -2,16 +2,21 @@ name: Refresh CMC snapshot
 
 on:
   schedule:
-    # Mondays 03:17 UTC
-    - cron: "17 3 * * 1"
+    # Daily 03:17 UTC
+    - cron: "17 3 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: cmc-snapshot
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
