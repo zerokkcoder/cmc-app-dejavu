@@ -6,7 +6,7 @@ A one-screen market déjà-vu engine built entirely on CoinMarketCap Pro API dat
 
 Built for **Build with CMC: API Hackathon Round 2 (Plushie)** — **Data and Visualisation** track. `#BuildwithCMC`
 
-**Live demo:** https://cmc-app-dejavu.vercel.app/ · **Repository:** https://github.com/zerokkcoder/cmc-app-dejavu
+**Live demo:** https://cmc-app-dejavu.vercel.app/ · **Repository:** https://github.com/zerokkcoder/cmc-app-dejavu · **X post:** https://x.com/huanggz0315/status/2123317982155964574 · **Demo video:** https://www.youtube.com/watch?v=SYunm4i5CIw
 
 > ✅ **DATA STATUS:** `data/snapshot.json` contains **real CMC API data** fetched with a Startup-tier key: 1,089 aligned UTC days (2023-11-26 → 2026-11-18), 347 credits consumed. Real raw responses with `status.credit_count` are in `data/evidence/*.sample.json`. `data/probe-report.json` records the verified field/plan probe. Refresh with `npm run probe && npm run snapshot`.
 

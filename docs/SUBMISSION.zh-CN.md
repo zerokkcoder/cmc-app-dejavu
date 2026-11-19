@@ -10,7 +10,10 @@
 
 - [ ] 公开 GitHub 仓库（不能 private）
 - [ ] 可运行部署 demo 或录屏
-- [ ] X/Twitter 帖：含 DoraHacks 提交链接 + demo 视频 + `#BuildwithCMC`，帖子 URL 回填表单
+- [x] X/Twitter 帖：含 DoraHacks 链接 + demo 视频 + `#BuildwithCMC`，帖子 URL 回填表单
+  - **已发布 2026-11-19：** https://x.com/huanggz0315/status/2123317982155964574（作者 @huanggz0315）
+  - 已核验内容：`#BuildwithCMC`、线上 demo、demo 视频、DoraHacks 链接。
+  - ⚠️ 帖中标注 "BUIDL" 的链接目前指向**赛事详情页**（`https://dorahacks.io/hackathon/coinmarketcap-api-202611/detail`），不是 BUIDL 提交页。创建 BUIDL 后如评委要求，请编辑或重发帖子换成真正的 BUIDL 链接。
 - [ ] 显式列出所用 CMC 端点（见根 README 表格与 `API_NOTES.md`）
 - [ ] 真实 API 调用的可见证据：代码 + 响应（`data/evidence/*.sample.json` + `scripts/fetch-all.ts`）
 - [ ] 简短说明「API 让什么成为可能 / 在哪里阻碍」（README + `API_NOTES.md`）
@@ -48,9 +51,13 @@ npm run build
 5. 展示 `data/evidence/*.sample.json` 中的 `status.credit_count`，逐字念出端点名。
 6. 以免责声明收尾：历史相似不等于未来重复。
 
-## X 帖模板
+## X 帖
 
-> Built **DÉJÀVU** for #BuildwithCMC — a market déjà-vu engine: 6-dim fingerprint from CMC first-party indices, find the most similar day in 1000 days, see what happened next. Live: https://cmc-app-dejavu.vercel.app/ · Demo: <视频> · Submission: <DoraHacks 链接> #BuildwithCMC
+已发布：https://x.com/huanggz0315/status/2123317982155964574
+
+> Built DÉJÀVU for #BuildwithCMC — a market déjà-vu engine from @CoinMarketCap data. 6-dim fingerprint → most similar day in 1,089 → what happened next. Live: https://cmc-app-dejavu.vercel.app/ · BUIDL: https://dorahacks.io/hackathon/coinmarketcap-api-202611/detail · Demo: https://www.youtube.com/watch?v=SYunm4i5CIw
+
+Demo 视频：https://www.youtube.com/watch?v=SYunm4i5CIw
 
 ## 合规
 

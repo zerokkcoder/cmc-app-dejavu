@@ -10,7 +10,10 @@ Deadline: **2026-12-09 23:59 UTC** (submit by 12/07 to leave buffer)
 
 - [ ] Public GitHub repository (not private)
 - [ ] Working deployed demo or screen recording
-- [ ] X/Twitter post containing the DoraHacks submission link + demo video + `#BuildwithCMC`; paste post URL into the form
+- [x] X/Twitter post containing the DoraHacks link + demo video + `#BuildwithCMC`; paste post URL into the form
+  - **Published 2026-11-19:** https://x.com/huanggz0315/status/2123317982155964574 (author @huanggz0315)
+  - Verified live content: `#BuildwithCMC`, live demo, demo video, DoraHacks link.
+  - ⚠️ The link labelled "BUIDL" currently points to the **event detail page** (`https://dorahacks.io/hackathon/coinmarketcap-api-202611/detail`), not a BUIDL submission page. After the BUIDL is created, edit/repost with the real BUIDL URL if the judges require it.
 - [ ] Explicitly named CMC API endpoints (see table in root README and `API_NOTES.md`)
 - [ ] Visible evidence of real API calls: code AND response (`data/evidence/*.sample.json` + `scripts/fetch-all.ts`)
 - [ ] Short note on "what the API made possible / where it got in the way" (README + `API_NOTES.md`)
@@ -48,9 +51,13 @@ The runtime never calls CMC, so no `CMC_API_KEY` is required on Vercel. Keep the
 5. Show `data/evidence/*.sample.json` with `status.credit_count` and name the endpoints.
 6. End on the disclaimer: similarity ≠ prediction.
 
-## X post template
+## X post
 
-> Built **DÉJÀVU** for #BuildwithCMC — a market déjà-vu engine: 6-dim fingerprint from CMC first-party indices, find the most similar day in 1000 days, see what happened next. Live: https://cmc-app-dejavu.vercel.app/ · Demo: <video> · Submission: <DoraHacks URL> #BuildwithCMC
+Published: https://x.com/huanggz0315/status/2123317982155964574
+
+> Built DÉJÀVU for #BuildwithCMC — a market déjà-vu engine from @CoinMarketCap data. 6-dim fingerprint → most similar day in 1,089 → what happened next. Live: https://cmc-app-dejavu.vercel.app/ · BUIDL: https://dorahacks.io/hackathon/coinmarketcap-api-202611/detail · Demo: https://www.youtube.com/watch?v=SYunm4i5CIw
+
+Demo video: https://www.youtube.com/watch?v=SYunm4i5CIw
 
 ## Compliance
 
