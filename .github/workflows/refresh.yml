@@ -5,6 +5,10 @@ on:
     # Daily 03:17 UTC
     - cron: "17 3 * * *"
   workflow_dispatch:
+  # Self-test when this workflow changes; GITHUB_TOKEN commits do not re-trigger it.
+  push:
+    paths:
+      - ".github/workflows/refresh.yml"
 
 permissions:
   contents: write
