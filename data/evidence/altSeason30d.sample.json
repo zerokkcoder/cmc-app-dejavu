@@ -155,10 +155,10 @@
     ]
   },
   "status": {
-    "timestamp": "2026-11-19T05:59:16.050Z",
+    "timestamp": "2026-11-19T07:00:08.959Z",
     "error_code": 0,
     "error_message": null,
-    "elapsed": 4,
+    "elapsed": 21,
     "credit_count": 1,
     "notice": null
   }

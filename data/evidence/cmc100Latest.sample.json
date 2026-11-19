@@ -1,9 +1,9 @@
 {
   "data": {
-    "value": 123.65,
-    "value_24h_percentage_change": -1.7,
-    "last_update": "2026-11-19T05:55:00.000Z",
-    "next_update": "2026-11-19T06:00:00.000Z",
+    "value": 124.26,
+    "value_24h_percentage_change": -1.07,
+    "last_update": "2026-11-19T06:55:00.000Z",
+    "next_update": "2026-11-19T07:00:00.000Z",
     "constituents": [
       {
         "id": 1,
@@ -31,14 +31,14 @@
         "name": "XRP",
         "symbol": "XRP",
         "url": "https://coinmarketcap.com/currencies/xrp",
-        "weight": 3.3
+        "weight": 3.31
       },
       {
         "id": 5426,
         "name": "Solana",
         "symbol": "SOL",
         "url": "https://coinmarketcap.com/currencies/solana",
-        "weight": 2.35
+        "weight": 2.36
       },
       {
         "id": 1958,
@@ -66,7 +66,7 @@
         "name": "Monero",
         "symbol": "XMR",
         "url": "https://coinmarketcap.com/currencies/monero",
-        "weight": 0.51
+        "weight": 0.5
       },
       {
         "id": 74,
@@ -80,7 +80,7 @@
         "name": "UNUS SED LEO",
         "symbol": "LEO",
         "url": "https://coinmarketcap.com/currencies/unus-sed-leo",
-        "weight": 0.46
+        "weight": 0.45
       },
       {
         "id": 1975,
@@ -265,6 +265,13 @@
         "weight": 0.08
       },
       {
+        "id": 36507,
+        "name": "Pump.fun",
+        "symbol": "PUMP",
+        "url": "https://coinmarketcap.com/currencies/pump-fun",
+        "weight": 0.07
+      },
+      {
         "id": 27075,
         "name": "Mantle",
         "symbol": "MNT",
@@ -304,13 +311,6 @@
         "name": "JUST",
         "symbol": "JST",
         "url": "https://coinmarketcap.com/currencies/just",
-        "weight": 0.06
-      },
-      {
-        "id": 36507,
-        "name": "Pump.fun",
-        "symbol": "PUMP",
-        "url": "https://coinmarketcap.com/currencies/pump-fun",
         "weight": 0.06
       },
       {
@@ -475,13 +475,6 @@
         "weight": 0.03
       },
       {
-        "id": 38590,
-        "name": "币安人生",
-        "symbol": "币安人生",
-        "url": "https://coinmarketcap.com/currencies/bianrensheng",
-        "weight": 0.03
-      },
-      {
         "id": 2280,
         "name": "Filecoin",
         "symbol": "FIL",
@@ -615,6 +608,13 @@
         "weight": 0.02
       },
       {
+        "id": 38590,
+        "name": "币安人生",
+        "symbol": "币安人生",
+        "url": "https://coinmarketcap.com/currencies/bianrensheng",
+        "weight": 0.02
+      },
+      {
         "id": 16086,
         "name": "BitTorrent [New]",
         "symbol": "BTT",
@@ -708,10 +708,10 @@
     ]
   },
   "status": {
-    "timestamp": "2026-11-19T05:59:16.052Z",
+    "timestamp": "2026-11-19T07:00:08.941Z",
     "error_code": "0",
     "error_message": "",
-    "elapsed": 5,
+    "elapsed": 3,
     "credit_count": 1
   }
 }

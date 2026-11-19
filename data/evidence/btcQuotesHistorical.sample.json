@@ -19034,10 +19034,10 @@
     }
   },
   "status": {
-    "timestamp": "2026-11-19T05:59:06.114Z",
+    "timestamp": "2026-11-19T07:00:05.736Z",
     "error_code": 0,
     "error_message": null,
-    "elapsed": 74,
+    "elapsed": 283,
     "credit_count": 12,
     "notice": null
   }
