@@ -3,11 +3,6 @@
     "timeframe": "30d",
     "points": [
       {
-        "timestamp": "2026-10-21T00:00:00Z",
-        "altcoin_index": 59,
-        "altcoin_marketcap": 1106827070103.31
-      },
-      {
         "timestamp": "2026-10-22T00:00:00Z",
         "altcoin_index": 56,
         "altcoin_marketcap": 1116651440926.95
@@ -149,16 +144,21 @@
       },
       {
         "timestamp": "2026-11-19T00:00:00Z",
-        "altcoin_index": 59,
+        "altcoin_index": 50,
         "altcoin_marketcap": 884890272801.43
+      },
+      {
+        "timestamp": "2026-11-20T00:00:00Z",
+        "altcoin_index": 54,
+        "altcoin_marketcap": 878393382904.48
       }
     ]
   },
   "status": {
-    "timestamp": "2026-11-19T07:00:08.959Z",
+    "timestamp": "2026-11-20T11:49:53.164Z",
     "error_code": 0,
     "error_message": null,
-    "elapsed": 21,
+    "elapsed": 4,
     "credit_count": 1,
     "notice": null
   }

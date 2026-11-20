@@ -2,16 +2,6 @@
   "data": {
     "quotes": [
       {
-        "timestamp": "2023-10-27T00:00:00.000Z",
-        "quote": {
-          "USD": {
-            "timestamp": "2023-10-27T00:00:00.000Z",
-            "total_market_cap": 1259755328202.72,
-            "altcoin_market_cap": 592852704971.53
-          }
-        }
-      },
-      {
         "timestamp": "2023-10-28T00:00:00.000Z",
         "quote": {
           "USD": {
@@ -11190,11 +11180,21 @@
             "altcoin_market_cap": 899542245844.92
           }
         }
+      },
+      {
+        "timestamp": "2026-11-19T00:00:00.000Z",
+        "quote": {
+          "USD": {
+            "timestamp": "2026-11-19T00:00:00.000Z",
+            "total_market_cap": 2152268942450.06,
+            "altcoin_market_cap": 884890272801.43
+          }
+        }
       }
     ]
   },
   "status": {
-    "timestamp": "2026-11-19T07:00:05.364Z",
+    "timestamp": "2026-11-20T11:49:50.642Z",
     "error_code": 0,
     "error_message": null,
     "elapsed": 236,
