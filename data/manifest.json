@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-20T11:49:53.458Z",
-  "coverageStart": "2023-11-27",
-  "coverageEnd": "2026-11-19",
+  "generatedAt": "2026-11-21T11:15:26.144Z",
+  "coverageStart": "2023-11-28",
+  "coverageEnd": "2026-11-20",
   "alignedDays": 1089,
   "totalCredits": 347,
   "keyPlan": "Startup",
@@ -11,9 +11,9 @@
     "/v3/fear-and-greed/historical",
     "/v3/cryptocurrency/quotes/historical",
     "/v3/cryptocurrency/listings/latest",
-    "/v1/altcoin-season-index/historical",
+    "/v1/global-metrics/quotes/latest",
     "/v3/fear-and-greed/latest",
-    "/v3/index/cmc100-latest",
-    "/v1/global-metrics/quotes/latest"
+    "/v1/altcoin-season-index/historical",
+    "/v3/index/cmc100-latest"
   ]
 }
