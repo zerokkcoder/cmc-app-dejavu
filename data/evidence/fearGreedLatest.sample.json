@@ -1,14 +1,14 @@
 {
   "data": {
-    "value": 8,
-    "update_time": "2026-11-22T11:23:10.031Z",
+    "value": 9,
+    "update_time": "2026-11-23T12:53:10.036Z",
     "value_classification": "Extreme fear"
   },
   "status": {
-    "timestamp": "2026-11-22T11:34:48.467Z",
+    "timestamp": "2026-11-23T12:59:12.571Z",
     "error_code": "0",
     "error_message": "",
-    "elapsed": 4,
+    "elapsed": 2,
     "credit_count": 1
   }
 }
