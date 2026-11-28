@@ -8,23 +8,6 @@
       "is_fiat": 0,
       "quotes": [
         {
-          "timestamp": "2023-11-04T00:00:00.000Z",
-          "quote": {
-            "USD": {
-              "price": 34736.3234106715,
-              "percent_change_1h": 0.257183419377,
-              "percent_change_24h": -0.589972265829,
-              "percent_change_7d": 2.443690308644,
-              "percent_change_30d": 24.956884599372,
-              "volume_24h": 17157050164.8,
-              "market_cap": 678480498172.1995,
-              "circulating_supply": 19532306,
-              "total_supply": 19532306,
-              "timestamp": "2023-11-04T00:00:00.000Z"
-            }
-          }
-        },
-        {
           "timestamp": "2023-11-05T00:00:00.000Z",
           "quote": {
             "USD": {
@@ -19029,15 +19012,32 @@
               "timestamp": "2026-11-26T00:00:00.000Z"
             }
           }
+        },
+        {
+          "timestamp": "2026-11-27T00:00:00.000Z",
+          "quote": {
+            "USD": {
+              "price": 60495.948402243324,
+              "percent_change_1h": 0.053168577424,
+              "percent_change_24h": 0.194402810664,
+              "percent_change_7d": -2.275775627206,
+              "percent_change_30d": -25.129167840553,
+              "volume_24h": 21738089066.51,
+              "market_cap": 1217049323003.2969,
+              "circulating_supply": 20117865,
+              "total_supply": 20117865,
+              "timestamp": "2026-11-27T00:00:00.000Z"
+            }
+          }
         }
       ]
     }
   },
   "status": {
-    "timestamp": "2026-11-27T12:36:16.248Z",
+    "timestamp": "2026-11-28T11:55:20.761Z",
     "error_code": 0,
     "error_message": null,
-    "elapsed": 66,
+    "elapsed": 73,
     "credit_count": 12,
     "notice": null
   }
